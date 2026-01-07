@@ -1,1 +1,1 @@
-# LUMI-RE-Makeup_Product-
+LUMI-RE is a modern, user-friendly makeup product shopping web application designed to provide customers with an easy and engaging online beauty shopping experience. The platform allows users to browse, search, and purchase a wide range of cosmetic products from different brands through a clean and responsive interface.
