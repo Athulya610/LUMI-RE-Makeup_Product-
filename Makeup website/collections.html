@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collections | LUMIÈRE</title>
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .collection-card {
+            position: relative;
+            overflow: hidden;
+            border-radius: 4px;
+            margin-bottom: 30px;
+            cursor: pointer;
+        }
+
+        .collection-img {
+            height: 400px;
+            background-size: cover;
+            background-position: center;
+            transition: transform 0.5s ease;
+        }
+
+        .collection-card:hover .collection-img {
+            transform: scale(1.05);
+        }
+
+        .collection-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 40px;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
+            color: white;
+            transition: all 0.3s ease;
+        }
+
+        .collection-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        .collection-btn {
+            background-color: white;
+            color: black;
+            padding: 10px 25px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 0.8rem;
+            border: none;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 15px;
+            transition: all 0.3s ease;
+        }
+
+        .collection-btn:hover {
+            background-color: var(--primary-color);
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container navbar">
+            <div class="logo">LUMIÈRE<span>.</span></div>
+            <div class="menu-toggle"><i class="fas fa-bars"></i></div>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="products.html">Shop</a>
+                <a href="collections.html" class="active">Collections</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <div class="nav-icons">
+                <a href="#"><i class="fas fa-search"></i></a>
+                <a href="login.html"><i class="far fa-user"></i></a>
+                <a href="cart.html"><i class="fas fa-shopping-bag"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <h1>Curated Collections</h1>
+        <p>Home / Collections</p>
+    </section>
+
+    <!-- Collections Grid -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="product-grid" style="grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));">
+
+                <!-- Collection 1 -->
+                <div class="collection-card">
+                    <div class="collection-img" style="background-image: url('images/glow_serum.png');"></div>
+                    <div class="collection-overlay">
+                        <h2 class="collection-title">Summer Glow</h2>
+                        <p>Achieve that sun-kissed radiance all year round.</p>
+                        <a href="products.html?collection=summer" class="collection-btn">View Collection</a>
+                    </div>
+                </div>
+
+                <!-- Collection 2 -->
+                <div class="collection-card">
+                    <div class="collection-img" style="background-image: url('images/velvet_lipstick.png');"></div>
+                    <div class="collection-overlay">
+                        <h2 class="collection-title">Bridal Edit</h2>
+                        <p>Timeless elegance for your special day.</p>
+                        <a href="products.html?collection=bridal" class="collection-btn">View Collection</a>
+                    </div>
+                </div>
+
+                <!-- Collection 3 -->
+                <div class="collection-card">
+                    <div class="collection-img" style="background-image: url('images/hero_model_makeup.png');"></div>
+                    <div class="collection-overlay">
+                        <h2 class="collection-title">Daily Essentials</h2>
+                        <p>The perfect basics for an effortless look.</p>
+                        <a href="products.html?collection=daily" class="collection-btn">View Collection</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <div class="logo" style="color: #fff; margin-bottom: 20px;">LUMIÈRE<span>.</span></div>
+                    <p>Redefining beauty with clean, sustainable, and luxurious cosmetics designed for the modern woman.
+                    </p>
+                </div>
+                <!-- ... footer cols same as index ... -->
+                <div class="footer-col">
+                    <h4>Shop</h4>
+                    <ul>
+                        <li><a href="#">Face</a></li>
+                        <li><a href="#">Lips</a></li>
+                        <li><a href="#">Eyes</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Help</h4>
+                    <ul>
+                        <li><a href="#">Shipping & Returns</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt" style="margin-right: 10px;"></i> 123 Beauty Blvd, NY 10012
+                        </li>
+                        <li><i class="fas fa-envelope" style="margin-right: 10px;"></i> hello@lumiere.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2024 Lumière Cosmetics. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

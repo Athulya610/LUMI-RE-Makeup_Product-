@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop | LUMIÈRE</title>
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container navbar">
+            <div class="logo">LUMIÈRE<span>.</span></div>
+            <div class="menu-toggle"><i class="fas fa-bars"></i></div>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="products.html" class="active">Shop</a>
+                <a href="collections.html">Collections</a>
+                <a href="#">About</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <div class="nav-icons">
+                <a href="#"><i class="fas fa-search"></i></a>
+                <a href="login.html"><i class="far fa-user"></i></a>
+                <a href="cart.html"><i class="fas fa-shopping-bag"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <h1>All Products</h1>
+        <p>Home / Shop</p>
+    </section>
+
+    <!-- Shop Content -->
+    <section class="section-padding">
+        <div class="container shop-container">
+            <!-- Sidebar -->
+            <aside class="sidebar">
+                <div class="filter-widget">
+                    <h3>Categories</h3>
+                    <ul>
+                        <li><a href="#">Face <span class="count">(12)</span></a></li>
+                        <li><a href="#">Eyes <span class="count">(8)</span></a></li>
+                        <li><a href="#">Lips <span class="count">(15)</span></a></li>
+                        <li><a href="#">Skincare <span class="count">(6)</span></a></li>
+                        <li><a href="#">Tools <span class="count">(4)</span></a></li>
+                    </ul>
+                </div>
+
+                <div class="filter-widget">
+                    <h3>Price</h3>
+                    <div class="price-range">
+                        <input type="range" min="0" max="100">
+                        <div class="price-labels">
+                            <span>$0</span>
+                            <span>$100+</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="filter-widget">
+                    <h3>Skin Type</h3>
+                    <div class="checkbox-group">
+                        <label><input type="checkbox"> Normal</label>
+                        <label><input type="checkbox"> Oily</label>
+                        <label><input type="checkbox"> Dry</label>
+                        <label><input type="checkbox"> Combination</label>
+                    </div>
+                </div>
+            </aside>
+
+            <!-- Product Grid -->
+            <div class="shop-content">
+                <div class="shop-topbar">
+                    <p>Showing 1–9 of 45 results</p>
+                    <select>
+                        <option>Sort by Default</option>
+                        <option>Price: Low to High</option>
+                        <option>Price: High to Low</option>
+                        <option>Newest First</option>
+                    </select>
+                </div>
+
+                <div class="product-grid three-col">
+                    <!-- Product 1 -->
+                    <div class="product-card">
+                        <div class="product-img">
+                            <img src="images/velvet_lipstick.png" alt="Velvet Matte Lipstick">
+                            <span class="badge">New</span>
+                            <div class="overlay">
+                                <button class="add-to-cart"><i class="fas fa-shopping-bag"></i> Add</button>
+                                <a href="product-details.html" style="text-decoration:none;"><button
+                                        class="view-details"><i class="far fa-eye"></i></button></a>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <h3>Velvet Matte Lipstick</h3>
+                            <div class="price">$24.00</div>
+                        </div>
+                    </div>
+
+                    <!-- Product 2 -->
+                    <div class="product-card">
+                        <div class="product-img">
+                            <img src="images/glow_serum.png" alt="Radiant Glow Serum">
+                            <div class="overlay">
+                                <button class="add-to-cart"><i class="fas fa-shopping-bag"></i> Add</button>
+                                <a href="product-details.html" style="text-decoration:none;"><button
+                                        class="view-details"><i class="far fa-eye"></i></button></a>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h3>Radiant Glow Serum</h3>
+                            <div class="price">$45.00</div>
+                        </div>
+                    </div>
+
+                    <!-- Product 3 -->
+                    <div class="product-card">
+                        <div class="product-img">
+                            <img src="images/blush_palette.jpg" alt="Product">
+                            <span class="badge sale">-20%</span>
+                            <div class="overlay">
+                                <button class="add-to-cart"><i class="fas fa-shopping-bag"></i> Add</button>
+                                <a href="product-details.html" style="text-decoration:none;"><button
+                                        class="view-details"><i class="far fa-eye"></i></button></a>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <h3>Rose Blush Palette</h3>
+                            <div class="price"><span class="old-price">$35.00</span> $28.00</div>
+                        </div>
+                    </div>
+
+                    <!-- Product 4 -->
+                    <div class="product-card">
+                        <div class="product-img">
+                            <img src="images/gold_highlighter.jpg" alt="Product">
+                            <div class="overlay">
+                                <button class="add-to-cart"><i class="fas fa-shopping-bag"></i> Add</button>
+                                <a href="product-details.html" style="text-decoration:none;"><button
+                                        class="view-details"><i class="far fa-eye"></i></button></a>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h3>Golden Hour Highlighter</h3>
+                            <div class="price">$32.00</div>
+                        </div>
+                    </div>
+
+                    <!-- Product 5 -->
+                    <div class="product-card">
+                        <div class="product-img">
+                            <img src="images/liquid_foundation.jpg" alt="Product">
+                            <div class="overlay">
+                                <button class="add-to-cart"><i class="fas fa-shopping-bag"></i> Add</button>
+                                <a href="product-details.html" style="text-decoration:none;"><button
+                                        class="view-details"><i class="far fa-eye"></i></button></a>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <h3>Silk Finish Foundation</h3>
+                            <div class="price">$38.00</div>
+                        </div>
+                    </div>
+
+                    <!-- Product 6 -->
+                    <div class="product-card">
+                        <div class="product-img">
+                            <img src="images/eyeliner.jpg" alt="Product">
+                            <div class="overlay">
+                                <button class="add-to-cart"><i class="fas fa-shopping-bag"></i> Add</button>
+                                <a href="product-details.html" style="text-decoration:none;"><button
+                                        class="view-details"><i class="far fa-eye"></i></button></a>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <h3>Precision Eyeliner</h3>
+                            <div class="price">$18.00</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pagination">
+                    <a href="#" class="active">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#"><i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <div class="logo" style="color: #fff; margin-bottom: 20px;">LUMIÈRE<span>.</span></div>
+                    <p>Redefining beauty with clean, sustainable, and luxurious cosmetics designed for the modern woman.
+                    </p>
+                </div>
+                <div class="footer-col">
+                    <h4>Shop</h4>
+                    <ul>
+                        <li><a href="#">Face</a></li>
+                        <li><a href="#">Lips</a></li>
+                        <li><a href="#">Eyes</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Help</h4>
+                    <ul>
+                        <li><a href="#">Shipping & Returns</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt" style="margin-right: 10px;"></i> 123 Beauty Blvd, NY 10012
+                        </li>
+                        <li><i class="fas fa-envelope" style="margin-right: 10px;"></i> hello@lumiere.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2024 Lumière Cosmetics. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
